@@ -63,7 +63,7 @@ The platform utilizes a combination of machine learning, semantic retrieval (RAG
 System Architecture & Workflow
 
 1. Data Preparation & Exploration (`Task 1`)
-* **Data Ingestion**: Loads or generates synthetic datasets simulating agricultural supply chain issues (e.g., *Delayed Delivery*, *Damaged Fertilizer*, *Spoiled Seeds*).
+* **Data Ingestion: Loads or generates synthetic datasets simulating agricultural supply chain issues (e.g., *Delayed Delivery*, *Damaged Fertilizer*, *Spoiled Seeds*).
 * **Preprocessing**: Normalizes raw customer text, filters stop words, and applies custom label encoders.
 * **Class Balancing**: Utilizes class resampling to balance heavily skewed categories ensuring robust learning.
 
