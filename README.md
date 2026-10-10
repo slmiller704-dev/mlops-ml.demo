@@ -81,13 +81,13 @@ Built on top of **LangGraph**, the system coordinates a graph of specialized col
 * **Escalation Manager**: Ensures high-risk edge cases are properly isolated and directly formatted into structured executive reports.
 
 4. Interactive Dashboards & Deployment (`Task 4`)
-* **FastAPI Backend**: Exposes the orchestration graph as high-performance endpoints.
-* **Unified Streamlit Interface**: Offers four functional views from a single viewport:
-  1. **EDA Dashboard** for overall operation health metrics.
-  2. **Real-time ANN Classifier** playground.
-  3. **RAG Search Assistant** for policy lookups.
-  4. **Agentic Workflow Trace** to inspect LangGraph execution logs.
-* **Docker Containerization**: Includes modular configuration via `docker-compose.yml` to orchestrate service microstructures on independent virtual ports.
+* FastAPI Backend: Exposes the orchestration graph as high-performance endpoints.
+* Unified Streamlit Interface: Offers four functional views from a single viewport:
+  1. EDA Dashboard for overall operation health metrics.
+  2. Real-time ANN Classifier playground.
+  3. RAG Search Assistant for policy lookups.
+  4. Agentic Workflow Trace to inspect LangGraph execution logs.
+* Docker Containerization: Includes modular configuration via `docker-compose.yml` to orchestrate service microstructures on independent virtual ports.
 
 ---
 
