@@ -22,9 +22,9 @@ System Architecture & Workflow
 3. Agentic AI Orchestration (`Task 3`)
 Built on top of **LangGraph**, the system coordinates a graph of specialized collaborative LLM nodes:
 * **Analyzer Agent**: Assesses severity and flags critical high-risk accounts (e.g., contamination, legal escalation).
-* **Investigator Agent: Automatically queries the FAISS-powered SOP database.
+* **Investigator Agent**: Automatically queries the FAISS-powered SOP database.
 * **Planner Agent**: Generates actionable, step-by-step resolution blueprints.
-* **Communicator Agent: Drafts empathetic, customized email replies to affected customers.
+* **Communicator Agent**: Drafts empathetic, customized email replies to affected customers.
 * **Escalation Manager**: Ensures high-risk edge cases are properly isolated and directly formatted into structured executive reports.
 
 4. Interactive Dashboards & Deployment (`Task 4`)
