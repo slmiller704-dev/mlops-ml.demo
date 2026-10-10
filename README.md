@@ -16,8 +16,8 @@ System Architecture & Workflow
 
 2. Machine Learning & Knowledge Base (`Task 2`)
    Sentence Embeddings: Converts clean complaint text into dense vector representations using `SentenceTransformer` (`all-MiniLM-L6-v2`).
-* **ANN Classifier: A PyTorch-based Artificial Neural Network (ANN) that automatically categorizes incoming complaints into one of the 8 target domains.
-* **RAG Retrieval: Leverages a dense `FAISS` vector index mapping complaints to historical Standard Operating Procedures (SOPs) for context-aware policy retrieval.
+* **ANN Classifier**: A PyTorch-based Artificial Neural Network (ANN) that automatically categorizes incoming complaints into one of the 8 target domains.
+* **RAG Retrieval**: Leverages a dense `FAISS` vector index mapping complaints to historical Standard Operating Procedures (SOPs) for context-aware policy retrieval.
 
 3. Agentic AI Orchestration (`Task 3`)
 Built on top of **LangGraph**, the system coordinates a graph of specialized collaborative LLM nodes:
