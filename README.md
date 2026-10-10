@@ -15,16 +15,16 @@ System Architecture & Workflow
 * **Class Balancing**: Utilizes class resampling to balance heavily skewed categories ensuring robust learning.
 
 2. Machine Learning & Knowledge Base (`Task 2`)
-* **Sentence Embeddings**: Converts clean complaint text into dense vector representations using `SentenceTransformer` (`all-MiniLM-L6-v2`).
-* **ANN Classifier**: A PyTorch-based Artificial Neural Network (ANN) that automatically categorizes incoming complaints into one of the 8 target domains.
-* **RAG Retrieval**: Leverages a dense `FAISS` vector index mapping complaints to historical Standard Operating Procedures (SOPs) for context-aware policy retrieval.
+   Sentence Embeddings: Converts clean complaint text into dense vector representations using `SentenceTransformer` (`all-MiniLM-L6-v2`).
+* **ANN Classifier: A PyTorch-based Artificial Neural Network (ANN) that automatically categorizes incoming complaints into one of the 8 target domains.
+* **RAG Retrieval: Leverages a dense `FAISS` vector index mapping complaints to historical Standard Operating Procedures (SOPs) for context-aware policy retrieval.
 
 3. Agentic AI Orchestration (`Task 3`)
 Built on top of **LangGraph**, the system coordinates a graph of specialized collaborative LLM nodes:
 * **Analyzer Agent**: Assesses severity and flags critical high-risk accounts (e.g., contamination, legal escalation).
-* **Investigator Agent**: Automatically queries the FAISS-powered SOP database.
+* **Investigator Agent: Automatically queries the FAISS-powered SOP database.
 * **Planner Agent**: Generates actionable, step-by-step resolution blueprints.
-* **Communicator Agent**: Drafts empathetic, customized email replies to affected customers.
+* **Communicator Agent: Drafts empathetic, customized email replies to affected customers.
 * **Escalation Manager**: Ensures high-risk edge cases are properly isolated and directly formatted into structured executive reports.
 
 4. Interactive Dashboards & Deployment (`Task 4`)
