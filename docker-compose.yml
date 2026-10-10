@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=your-actual-api-key-here
+
+  eda-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=your-actual-api-key-here
+    command: streamlit run frontend/app_unified.py --server.port=8501 --server.address=0.0.0.0
+
+  classifier-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8502:8502"
+    environment:
+      - OPENAI_API_KEY=your-actual-api-key-here
+    command: streamlit run frontend/app_unified.py --server.port=8502 --server.address=0.0.0.0
+
+  rag-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8503:8503"
+    environment:
+      - OPENAI_API_KEY=your-actual-api-key-here
+    command: streamlit run frontend/app_unified.py --server.port=8503 --server.address=0.0.0.0
+
+  agentic-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8504:8504"
+    environment:
+      - OPENAI_API_KEY=your-actual-api-key-here
+    command: streamlit run frontend/app_unified.py --server.port=8504 --server.address=0.0.0.0

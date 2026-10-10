@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+torch
+scikit-learn
+pandas
+numpy
+langchain
+langchain-openai
+langchain-community
+langgraph
+faiss-cpu
+pydantic
+requests
